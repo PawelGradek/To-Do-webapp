@@ -20,11 +20,13 @@ datetime
 Download requirement and run a project
 
 ## Run project
-
+Website: task adding
 ![Zrzut ekranu_20230131_185207](https://user-images.githubusercontent.com/80818195/215844835-1c617704-257c-48a4-917a-1bc2885de47f.png)
 
+Website: list of all tasks
 ![Zrzut ekranu_20230131_185324](https://user-images.githubusercontent.com/80818195/215844905-304950aa-1289-416f-9ae0-b74dcaf6128c.png)
 
+Website: edit task
 ![Zrzut ekranu_20230131_185405](https://user-images.githubusercontent.com/80818195/215844960-5aec5fa8-6e52-489d-92e6-1831d63d6a9b.png)
 
 
