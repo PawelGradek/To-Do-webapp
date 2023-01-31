@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>{% block title %}To-do App{% endblock %}</title>
+  <style>
+    body {background-color: rgb(119, 156, 223);}
+    p    {color: rgb(76, 77, 77);}
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">App To-Do</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Add To-Do</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'list-of-all' %}">List of all To-Do</a>
+        </li>
+    </div>
+  </nav>
+  {% block content %}
+  <br>
+  <center><h2>Add To-Do</h2></center>
+  <div class="row">
+    <div class="col-md-4" style="margin: 0 auto;">
+      <form action="{% url 'add' %}">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" class="form-control" id="title" name="title">
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="priority">Priority:</label>
+          <input type="number" class="form-control" id="priority" name="priority">
+        </div>
+        <button type="add" class="btn btn-success" style="margin: 0 auto;display: block;">Add To-do</button>
+      </form>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

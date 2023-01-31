@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% block title %}List of All To-do{% endblock %}
+{% block content %}
+<br>
+<center><h1>List of tasks:</h1></center>
+{% for eachtodo in alltodos %}
+<div class="row">
+    <div class="col-md-4" style="margin:0 auto;">
+        <div class="card container-fluid" style="margin-top: 1rem;">
+            <div class="card-body">
+              <h3 class="card-title">{{eachtodo.title}}</h3>
+              <p class="card-title">Priority: {{eachtodo.priority}}</p>
+              <h6 class="card-text">{{eachtodo.description}}</h6>
+              <p class="card-text">{{eachtodo.created_at}}</p>
+
+              <a href="/edit-to-do/{{eachtodo.id}}" class="btn btn-primary">Edit</a>
+              <a href="/delete/{{eachtodo.id}}" class="btn btn-danger">Delete</a>
+
+              
+
+
+            </div>
+          </div>
+    </div>
+</div>
+
+{% endfor %}
+{% endblock %}
