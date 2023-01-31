@@ -29,8 +29,12 @@ Download requirement and run a project
 todoweb\add-to-do.png
 todoweb\list-of-all.png
 todoweb\edit-to-do.png
+![Zrzut ekranu_20230131_185207](https://user-images.githubusercontent.com/80818195/215844835-1c617704-257c-48a4-917a-1bc2885de47f.png)
+![Zrzut ekranu_20230131_185324](https://user-images.githubusercontent.com/80818195/215844905-304950aa-1289-416f-9ae0-b74dcaf6128c.png)
+![Zrzut ekranu_20230131_185405](https://user-images.githubusercontent.com/80818195/215844960-5aec5fa8-6e52-489d-92e6-1831d63d6a9b.png)
 
-## Information about author
+
+## Informacje o autorze
 Author: Paweł Gradek,
 e-mail adress: pawelgradek@gmail.com
 
